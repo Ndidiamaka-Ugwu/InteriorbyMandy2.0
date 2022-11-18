@@ -1,0 +1,213 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interior by Mandy</title>
+        <link rel="stylesheet" href="about-us.css">
+        <link rel="icon" href="media/favicon (2).ico">
+
+    </head>
+
+
+    <body>
+      <div class="top-bar">
+        <span><ion-icon name="call-outline"></ion-icon>+234 703 237 5252</span>
+      <ul>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="chimamandaugwu97@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
+          <li><a href="+2347032375252"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+      </ul>
+      </div>
+      <!-- navbar -->
+      <nav>
+      <div class="logo">
+          <a href="#"></a><img class="logo" src="media/Mandy_logo_1.png" alt="logo-picture"> Logo</a>
+      </div>
+
+      <div class="toggle">
+        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+      </div>
+      <ul class="menu">
+
+          <li class="navbar-links"><h1><a href="index.html">Home</a></h1></li>
+          <li class="navbar-links"><h1><a href="about-us.html">About Us</a></h1></li>
+          <li class="navbar-links"><h1><a href="Gallery.html">Gallery</a></h1></li>
+          <li class="navbar-links"><h1><a href="contact-us.html">Contact Us</a></h1></li>
+      </ul>
+
+
+      </nav>
+      <!-- the navigation bar -->
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+      <script>
+      $(function(){
+        $(".toggle").on("click", function(){
+      if($(".menu").hasClass("active")){
+      $(".menu").removeClass("active");
+      $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+      } else{
+      $(".menu").addClass("active");
+      $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+      }
+        });
+      });
+      </script>
+
+
+
+        <main>
+            <h1>ABOUT US</h1>
+<p>As we go about our business, we aim to provide one-of-a-kind results that improve people's lives in some way, whether by making items easier to use or more aesthetically pleasing. Our services include bespoke design, contemporary furniture, and architectural millwork.
+</p>
+
+
+<p>Now that you've heard us out, read what our satisfied customers have to say.
+</p>
+
+<section class="container-a">
+<h1>Testimonials</h1>
+<hr>
+<div class="testimonial-wrapper">
+  <div id="client-one" class="testimonial-content">
+    <p>I loved the way <em>Interior by Mandy</em> was able to bring my dreams to life. My AirBnB was well crafted to give this subtle and wholesome vibe that is just welcoming.</p>
+    <div class="profile-content">
+      <img src="media/images-videos/9.jpg" alt="living-room">
+    </div>
+    <div>
+    <h3>Alicia</h3>
+    <span>AirBnB Owner</span>
+      </div>
+  </div>
+
+  <div id="client-two" class="testimonial-content">
+    <p>Best decorator in Abuja. I would definitely recommend her to anyone anyday.</p>
+    <div class="profile-content">
+      <img src="media/images-videos/12.jpg" alt="wardrobe">
+    </div>
+    <div>
+    <h3>Racheal</h3>
+    <span>Banker</span>
+      </div>
+  </div>
+
+  <div id="client-three" class="testimonial-content">
+    <p>Interior by Mandy has a good reputation for quality work. They are also good with meeting deadlines. My experience was a good one.</p>
+    <div class="profile-content">
+      <img src="media/images-videos/bg2.jpg" alt="flowers-on-the-wall">
+    </div>
+    <div>
+    <h3>Ruby</h3>
+    <span>CEO, FingerLick'n-Good </span>
+      </div>
+  </div>
+
+  <div class="testimonial-images">
+    <div>
+  <img src="media/images-videos/9.jpg" alt="living-room" class="clientsimage" id="one">
+    </div>
+    <div>
+        <img src="media/images-videos/12.jpg" alt="bedroom" class="clientsimage" id="two">
+        <img src="media/images-videos/bg2.jpg" alt="flowers" class="clientsimage" id="three">
+    </div>
+  </div>
+</div>
+
+
+
+
+</section>
+
+
+</main>
+
+        <footer>
+          <ul class="social_icon">
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+              <li><a href="chimamandaugwu97@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
+              <li><a href="+2347032375252"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+          </ul>
+      <ul class="menu2">
+        <li class="navbar-links"><h1><a href="index.html">Home</a></h1></li>
+        <li class="navbar-links"><h1><a href="about-us.html">About Us</a></h1></li>
+        <li class="navbar-links"><h1><a href="Gallery.html">Gallery</a></h1></li>
+        <li class="navbar-links"><h1><a href="contact-us.html">Contact Us</a></h1></li>
+      </ul>
+        <p>&copyInterior by Mandy | All Rights Reserved</p>
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </footer>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+
+        </script>
+        <script type="text/javascript">
+$("#client-two, #client-three").hide();
+$(".clientsimage").mouseover(function(){
+changeclient = this.id;
+$("div.testimonial-content").hide();
+$("#client-"+changeclient).show();
+});
+        </script>
+        <!-- copied from index.html -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <!-- end of copied from index.html -->
+    </body>
+    </html>
+
+    <!-- WEBSITE CONTENT FOR INTERIOR BY MANDY
+
+
+
+
+
+    ------------------------------------------------------------------------------------------------------------
+
+    LOGO
+    CONTACT US
+    MOBILE NUMBER
+    INSTAGRAM
+
+
+
+
+
+
+
+    GALLERY
+
+    INTERIOR BY MANDY
+
+    HOMES
+
+    MEDIA MEDIA MEDIA
+
+    OFFICES
+
+    MEDIA MEDIA MEDIA
+
+
+    OTHERS
+
+    MEDIA MEDIA MEDIA
+
+    ------------------------------------------------------------------------------------------------------------
+
+    LOGO
+    CONTACT US
+    MOBILE NUMBER
+    INSTAGRAM
+
+
+
+    SHOP
+
+    What's your pick?
+
+
+    MEDIA MEDIA MEDIA -->

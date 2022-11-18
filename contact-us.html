@@ -1,0 +1,98 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interior by Mandy</title>
+        <link rel="stylesheet" href="contact-us.css">
+        <link rel="icon" href="media/favicon (2).ico">
+ </head>
+
+    <body>
+      <div class="top-bar">
+        <span><ion-icon name="call-outline"></ion-icon>+234 703 237 5252</span>
+      <ul>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="chimamandaugwu97@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
+          <li><a href="+2347032375252"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+      </ul>
+      </div>
+      <!-- navbar -->
+      <nav>
+      <div class="logo">
+          <a href="#"></a><img class="logo" src="media/Mandy_logo_1.png" alt="logo-picture"> Logo</a>
+      </div>
+
+      <div class="toggle">
+        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+      </div>
+      <ul class="menu">
+
+          <li class="navbar-links"><h1><a href="index.html">Home</a></h1></li>
+          <li class="navbar-links"><h1><a href="about-us.html">About Us</a></h1></li>
+          <li class="navbar-links"><h1><a href="Gallery.html">Gallery</a></h1></li>
+          <li class="navbar-links"><h1><a href="contact-us.html">Contact Us</a></h1></li>
+      </ul>
+
+
+      </nav>
+      <!-- the navigation bar -->
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+      <script>
+      $(function(){
+        $(".toggle").on("click", function(){
+      if($(".menu").hasClass("active")){
+      $(".menu").removeClass("active");
+      $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+      } else{
+      $(".menu").addClass("active");
+      $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+      }
+        });
+      });
+      </script>
+
+
+
+        <main class="contact-page">
+          <!-- <div class="bg-img">
+<img src="media/images-videos/timer.jpg" alt="">
+          </div> -->
+           <h1 class="contact">Book an appointment or just drop us a message</h1>
+          
+          <!-- <img class="photo" src="media/images-videos/telephone.jpg" alt="old telephone-Photo by Pixabay: https://www.pexels.com/photo/selective-focus-photography-of-black-rotary-phone-163007/">  -->
+          <div class="contact-details">
+          <h3 class="contact1">Email</h3>
+        <p class="contact2">chimamandaugwu97@gmail.com</p>
+        <p class="contact2">+234 703 237 5252</p>
+        </div>
+          </main>
+
+
+
+        <footer>
+          <ul class="social_icon">
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+              <li><a href="chimamandaugwu97@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
+              <li><a href="+2347032375252"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+          </ul>
+      <ul class="menu2">
+        <li class="navbar-links"><h1><a href="index.html">Home</a></h1></li>
+        <li class="navbar-links"><h1><a href="about-us.html">About Us</a></h1></li>
+        <li class="navbar-links"><h1><a href="Gallery.html">Gallery</a></h1></li>
+        <li class="navbar-links"><h1><a href="contact-us.html">Contact Us</a></h1></li>
+      </ul>
+        <p>&copyInterior by Mandy | All Rights Reserved</p>
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        </footer>
+    </body>
+    </html>
+
+    <!-- time- Photo by  samer daboul: https://www.pexels.com/photo/person-holding-smartphone-showing-hour-glass-1229456/
+ -->
